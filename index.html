@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100&display=swap');
+
+        body {
+
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .frame-calc {
+            display: flex;
+            flex-flow: row wrap;
+            width: 235px;
+            height: 302px;
+            border-radius: 5px;
+            border: 2px solid black;
+            border-collapse: collapse;
+            background-color: #696a6d;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        }
+
+        .header {
+            border-radius: 2px 2px 0px 0px;
+            display: flex;
+            height: 15px;
+            width: 100%;
+            background-color: #595a5d;
+            margin: 0px 1px;
+        }
+
+        .button-header-red {
+            margin: 2px 3px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #ff5f57;
+        }
+
+        .button-header-yellow {
+            margin: 2px 3px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #febc2e;
+        }
+
+        .button-header-green {
+            margin: 2px 3px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #28c840;
+        }
+
+        .calc-result {
+            color: white;
+            font-size: 35px;
+            font-weight: bold;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+
+        .calc-screen {
+            width: 100%;
+            height: 45px;
+            border: solid 1px #595a5d;
+            border-top: none;
+            background-color: #595a5d;
+            position: relative;
+        }
+
+        .top-button {
+            align-items: center;
+            justify-content: center;
+            width: 58.75px;
+            height: 48px;
+            border: solid 1px #696a6d;
+            background-color: #6b6c6f;
+            color: white;
+        }
+
+        .button-number {
+            align-items: center;
+            justify-content: center;
+            width: 58.75px;
+            height: 48px;
+            border: solid 1px #606164;
+            background-color: #858688;
+            color: white;
+        }
+
+        .button-symbol {
+            align-items: center;
+            justify-content: center;
+            width: 58.75px;
+            height: 48px;
+            border: solid 1px #606164;
+            background-color: #ff9f08;
+            color: white;
+        }
+
+        .button-zero {
+            align-items: center;
+            justify-content: center;
+            width: 117.5px;
+            height: 48px;
+            border: solid 1px #606164;
+            background-color: #858688;
+            color: white;
+        }
+
+        .button-number:focus {
+            background-color: white;
+            color: #858688;
+        }
+
+        .button-zero:focus {
+            background-color: white;
+            color: #858688;
+        }
+
+        .button-symbol:focus {
+            background-color: white;
+            color: #ff9f08;
+        }
+
+        .top-button:focus {
+            background-color: white;
+            color: #6b6c6f;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css" title="Color">
+</head>
+
+<body>
+    <div class="frame-calc">
+        <div class="header">
+            <div class="button-header-red"></div>
+            <div class="button-header-yellow"></div>
+            <div class="button-header-green"></div>
+        </div>
+        <div class="calc-screen"><span class="calc-result">865.4</span></div>
+        <button class="top-button">C</button>
+        <button class="top-button">+</button>
+        <button class="top-button">%</button>
+        <button class="button-symbol">/</button>
+        <button class="button-number">7</button>
+        <button class="button-number">8</button>
+        <button class="button-number">9</button>
+        <button class="button-symbol">X</button>
+        <button class="button-number">4</button>
+        <button class="button-number">5</button>
+        <button class="button-number">6</button>
+        <button class="button-symbol">-</button>
+        <button class="button-number">1</button>
+        <button class="button-number">2</button>
+        <button class="button-number">3</button>
+        <button class="button-symbol">+</button>
+        <button class="button-zero">0</button>
+        <button class="button-number">,</button>
+        <button class="button-symbol">=</button>
+
+    </div>
+
+</body>
+
+</html>
